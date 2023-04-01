@@ -1,0 +1,154 @@
+.navbar {
+  margin: auto;
+  background-color: transparent;
+  color: #f7f7f7;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.logo {
+  float: left;
+  margin: 0.5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  position: relative;
+  text-decoration: none;
+  color: #f7f7f7;
+  padding: 5px 20px;
+  transition: 0.6s ease;
+  display: block;
+}
+
+.navbar-links li a:hover {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  color: #f6c700;
+  text-decoration: none;
+}
+
+.navbar a.active:hover {
+  color: #f6c700;
+  text-decoration: none;
+}
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  background-color: #f6c700;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.navbar a:hover:after {
+  width: 100%;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 35px;
+  right: 3rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.logo-a:after {
+  background-color: transparent !important;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    padding-left: 0px;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+    padding-top: 1px;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    text-transform: uppercase;
+    margin: auto;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+  }
+
+  .navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    transition: 0.6s ease;
+    display: block;
+    font-weight: bold;
+  }
+}

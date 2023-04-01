@@ -1,0 +1,591 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Carousel gradient */
+
+.carousel-item {
+  height: 38rem;
+  color: #fffafb;
+  position: relative;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.carousel-item:before {
+  content: "";
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(30, 30, 30, 0.6) 50%,
+    rgba(0, 0, 0, 0.9) 80%
+  );
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Carousel opis filma */
+
+.c {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 8rem;
+}
+
+.carousel-p {
+  font-size: 16px;
+}
+
+.carousel-datum {
+  margin: 0;
+  padding: 0;
+  font-size: 1.375rem;
+}
+
+.c h1 {
+  font-size: 3.75rem;
+}
+
+.c span {
+  border-style: solid;
+  border-color: #f6c700;
+  border-width: 2px;
+}
+
+.c span p {
+  margin: 2px;
+  text-align: center;
+  color: #f6c700;
+  font-size: 16px;
+  display: inline;
+}
+
+/* Slike carousel */
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.item img {
+  max-height: 470px;
+  width: 350px;
+}
+
+.pocetna_slike {
+  border-radius: 1%;
+  height: 400px;
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.kon:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Div sa informacijama o filmu */
+
+.info {
+  height: 200px; /*300px  38.02vh*/
+  background-color: #fffafb;
+}
+
+.div-info-p-datum {
+  font-size: 1.11vw;
+}
+
+.div-info-p-sala {
+  font-size: 1.11vw;
+}
+
+.div-info-p-opis {
+  font-size: 16px;
+}
+
+/* To top dugme */
+
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #f6c700;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #1e1e1e;
+  color: #fffafb;
+  padding-top: 30px;
+  font-family: "Nunito", sans-serif;
+}
+
+footer a {
+  color: #fffafb;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+footer a:hover {
+  color: #fffafb;
+}
+
+.footer-p {
+  font-size: 18px;
+  color: #fffafb;
+}
+
+footer p {
+  color: #fffafb;
+  font-size: 15px;
+  line-height: 12px;
+}
+
+.item-f {
+  height: 300px;
+}
+
+.input-f {
+  width: 50%;
+}
+
+.copyright-f {
+  font-size: 14px;
+  color: #fffafb;
+}
+
+/* Footer kraj */
+
+/********************************************** POCETNA KRAJ ***********************************************************/
+
+/********************************************** Film stranica ***********************************************************/
+
+/*Prvi div sa slikom i opisom filma*/
+
+.film-d1 {
+  height: 40rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.moviep-poster {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s all ease-in-out;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(30, 30, 30, 0.3196) 26.04%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("../images/moviep-p1.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.moviep-poster:hover {
+  transform: scale(1.05);
+}
+
+.moviep-podaci {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 3rem;
+}
+
+.moviep-podaci span {
+  border-style: solid;
+  border-color: #f6c700;
+  border-width: 2px;
+}
+
+.moviep-podaci span p {
+  margin: 2px;
+  text-align: center;
+  color: #f6c700;
+  font-size: 16px;
+  display: inline;
+}
+
+.krug {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.moviep-info {
+  height: 400px; /*300px za moj monitor*/
+  background-color: #fffafb;
+  width: 100%;
+  font-size: 16px;
+}
+
+.moviep-info2 {
+  height: 38.02vh; /*300px*/
+  background-color: #fffafb;
+}
+
+.moviep-radnja {
+  display: none;
+}
+
+.moviep-btns {
+  display: none;
+}
+
+/********************************************** FILM KRAJ ***********************************************************/
+
+/********************************************** Repertoar ***********************************************************/
+
+/********************************************** REPERTOAR KRAJ ***********************************************************/
+
+/********************************************** Kontakt ***********************************************************/
+.kontakt-text {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: #1e1e1e;
+}
+
+.kontakt-email {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: #1e1e1e;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #f6c700;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #f6c700;
+}
+/********************************************** Kontakt KRAJ ***********************************************************/
+@media only screen and (max-width: 480px) {
+  /* Pocetna stranica*/
+  .c h1 {
+    font-size: 40px;
+  }
+
+  .c p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .item-f {
+    height: 200px;
+    width: 20px;
+  }
+
+  .input-f {
+    width: 100%;
+  }
+
+  .button-f {
+    width: 100%;
+  }
+
+  .button-f button {
+    width: 100%;
+  }
+
+  .info {
+    display: none !important;
+  }
+
+  .item img {
+    height: 200px;
+  }
+
+  .carousel-item {
+    height: 400px;
+    color: #fffafb;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .copyright-f {
+    font-size: 12px;
+  }
+
+  /* Stranica Filmovi */
+
+  .moviep-podaci h1 {
+    font-size: 35px;
+  }
+
+  .film-d1-opis {
+    display: none !important;
+  }
+
+  .film-d1-vreme {
+    display: none !important;
+  }
+
+  .moviep-info-slika {
+    display: none !important;
+  }
+
+  .moviep-info-hidden {
+    display: none !important;
+  }
+
+  .moviep-info {
+    height: 100% !important;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .moviep-radnja {
+    display: inline-block !important;
+    font-size: 16px;
+  }
+
+  .moviep-btns {
+    display: block !important;
+  }
+
+  .moviep-info-m {
+    height: 500px; /*300px za moj monitor*/
+    background-color: #fffafb;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .film-p-kada {
+    display: none;
+  }
+
+  .repertoar-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .uskoro-div {
+    display: none !important;
+  }
+
+  .footer-mobile {
+    display: block !important;
+  }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+  .info {
+    height: 600px;
+  }
+  .div-info-p {
+    width: 100%;
+  }
+
+  .div-info-p h4 {
+    font-size: 16px;
+  }
+
+  .div-info-p-datum {
+    font-size: 12px;
+  }
+
+  .div-info-p-sala {
+    font-size: 0.5rem;
+  }
+
+  .item-f {
+    height: 250px;
+    width: 20px;
+  }
+  .moviep-info-m {
+    display: none !important;
+  }
+
+  .footer-mobile {
+    display: none !important;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info {
+    height: 500px;
+  }
+  .moviep-info-m {
+    display: none !important;
+  }
+
+  .film-p-datum {
+    font-size: 12px;
+  }
+
+  .film-p-dugme {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: none !important;
+  }
+}
+
+/* Media Query for Laptops and Desktops  */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .info {
+    height: 400px;
+  }
+  .moviep-info-m {
+    display: none !important;
+  }
+  .film-p-ikonica {
+    display: none;
+  }
+  .footer-mobile {
+    display: none !important;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  .moviep-info-m {
+    display: none !important;
+  }
+
+  .film-p-ikonica {
+    display: none;
+  }
+
+  .item-f {
+    height: 380px;
+  }
+
+  .repertoar-img {
+    height: 350px;
+    width: 90%;
+  }
+  .footer-mobile {
+    display: none !important;
+  }
+}
+
+/* LOADER */
+
+.loader-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .input-control input {
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+  border: 1.5px solid #ccc;
+  box-sizing: border-box;
+  border-color: #1e1e1e;
+} */
+
+.input-control.success input,
+textarea {
+  border-color: #09c372;
+}
+
+.input-control.error input,
+textarea {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 12px;
+  height: 18px;
+}
