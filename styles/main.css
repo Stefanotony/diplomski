@@ -113,6 +113,16 @@ body {
   opacity: 1;
 }
 
+.obavestenje_div {
+  background-color: #fffafb;
+  display: flex;
+  height: auto;
+  min-height: 100px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
 .text {
   color: white;
   font-size: 20px;
@@ -123,6 +133,12 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.linija_repertoar {
+  width: 20%;
+  background-color: #f6c700;
+  height: 3px;
 }
 
 /* Div sa informacijama o filmu */
@@ -202,6 +218,16 @@ footer p {
 .copyright-f {
   font-size: 14px;
   color: #fffafb;
+}
+
+.div_pravo {
+  background-color: #fffafb;
+  display: flex;
+  height: 100px;
+  margin: auto;
+  border: 2px dashed #bbbbbb;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Footer kraj */
@@ -460,6 +486,34 @@ input[type="submit"]:hover {
 
   .c span {
     display: none !important;
+  }
+
+  .linija_repertoar {
+    width: 60%;
+  }
+
+  .pocetna_slike {
+    height: 450px;
+    width: 100%;
+  }
+
+  .obavestenje_div {
+    display: none !important;
+  }
+
+  .reperotar_div {
+    display: none !important;
+  }
+
+  .div_pravo {
+    height: 70px;
+    background-color: #fffafb;
+    display: flex;
+    height: 100px;
+    margin: auto;
+    border: 2px dashed #bbbbbb;
+    align-items: center;
+    justify-content: center;
   }
 }
 
