@@ -448,6 +448,21 @@ input[type="submit"]:hover {
   }
 }
 
+/* Media Query for Mobiles */
+@media (min-width: 320px) and (max-width: 480px) {
+  .carousel-p {
+    display: none !important;
+  }
+
+  .carousel-datum {
+    font-size: 18px;
+  }
+
+  .c span {
+    display: none !important;
+  }
+}
+
 /* Media Query for Tablets */
 @media (min-width: 481px) and (max-width: 767px) {
   .info {
