@@ -141,6 +141,12 @@ body {
   height: 3px;
 }
 
+.linija_repertoar_uskoro {
+  width: 18%;
+  background-color: #f6c700;
+  height: 3px;
+}
+
 /* Div sa informacijama o filmu */
 
 .info {
@@ -514,6 +520,10 @@ input[type="submit"]:hover {
     border: 2px dashed #bbbbbb;
     align-items: center;
     justify-content: center;
+  }
+
+  .uskoro-najava {
+    display: none !important;
   }
 }
 
