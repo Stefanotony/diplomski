@@ -1,5 +1,13 @@
 body {
   background-color: #f7f7f7;
+  font-family: "Avenir", sans-serif;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/AvenirLTStd-Book.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .navbar-nav {
@@ -19,6 +27,7 @@ body {
   object-position: center;
   overflow: hidden;
   height: 100vh;
+  aspect-ratio: 1/1;
 }
 
 .carousel-item:before {
@@ -238,6 +247,12 @@ footer p {
 
 /* Footer kraj */
 
+.linija_o_nama {
+  width: 10%;
+  background-color: #f6c700;
+  height: 3px;
+}
+
 /********************************************** POCETNA KRAJ ***********************************************************/
 
 /********************************************** Film stranica ***********************************************************/
@@ -322,6 +337,10 @@ footer p {
 
 /********************************************** Repertoar ***********************************************************/
 
+.odeljak_repertoar {
+  height: 350px;
+}
+
 /********************************************** REPERTOAR KRAJ ***********************************************************/
 
 /********************************************** Kontakt ***********************************************************/
@@ -361,6 +380,12 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #f6c700;
 }
+
+.lottie-player {
+  width: 500px;
+  height: 500px;
+}
+
 /********************************************** Kontakt KRAJ ***********************************************************/
 @media only screen and (max-width: 480px) {
   /* Pocetna stranica*/
@@ -498,6 +523,10 @@ input[type="submit"]:hover {
     width: 60%;
   }
 
+  .linija_o_nama {
+    width: 25%;
+  }
+
   .pocetna_slike {
     height: 450px;
     width: 100%;
@@ -524,6 +553,15 @@ input[type="submit"]:hover {
 
   .uskoro-najava {
     display: none !important;
+  }
+
+  .odeljak_repertoar {
+    height: 550px;
+  }
+
+  .lottie-player {
+    width: 320px;
+    height: 320px;
   }
 }
 
@@ -559,6 +597,19 @@ input[type="submit"]:hover {
   .footer-mobile {
     display: none !important;
   }
+
+  .odeljak_repertoar {
+    height: 500px;
+  }
+
+  .pocetna_slike {
+    height: 500px;
+    width: 100%;
+  }
+
+  .div_pravo {
+    padding-top: 50px;
+  }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
@@ -581,6 +632,16 @@ input[type="submit"]:hover {
   .footer-mobile {
     display: none !important;
   }
+
+  .pocetna_slike {
+    height: 270px;
+    width: 100%;
+  }
+
+  .lottie-player {
+    width: 380px;
+    height: 380px;
+  }
 }
 
 /* Media Query for Laptops and Desktops  */
@@ -596,6 +657,11 @@ input[type="submit"]:hover {
   }
   .footer-mobile {
     display: none !important;
+  }
+
+  .pocetna_slike {
+    height: 320px;
+    width: 100%;
   }
 }
 

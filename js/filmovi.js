@@ -1,11 +1,11 @@
 const film = {
   film1: {
-    naziv: "Interstellar",
+    naziv: "Začarani Grad",
     kratak_opis:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque cum, incidunt pariatur repellendus eum velit magnam, maiores eos nam quod quaerat ducimus unde quia aut? Suscipit et aliquid ea ex!1",
+      "Devojčica Čihiro se vozi u autu sa svojim roditeljima koji se zajedno sa njom sele u novi grad, no putem se izgube i stižu u tajanstveni hram koji je, zapravo, svet duhova.",
     dug_opis:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo veniam distinctio voluptas harum, incidunt recusandae porro laboriosam veritatis odit culpa, amet perferendis aut quae. Quia unde excepturi quos non impedit nobis, consectetur at quo ea officiis inventore exercitationem similique aperiam a, error doloremque iure molestiae dolorem cupiditate cum illum dolor commodi. Veniam illum error accusantium veritatis hic, laboriosam ullam. Id minima delectus nulla voluptas harum non possimus quam, iure laudantium? Temporibus amet vel ea voluptates cupiditate a, aliquam eos molestiae?",
-    zanr: "Akcija, Avantura, Naučna fantastika",
+    zanr: "Animirani, Avantura",
     trajanje: "3h35m",
     rezija: "Cristofer Nolan",
     scenario: "Fran Walsh, Philippa Boyens",
@@ -15,9 +15,9 @@ const film = {
     vreme_2: "21:00h",
     cena: "350",
     sala: "SALA1",
-    ocena: "10",
+    ocena: "8.6",
     imdb: "https://www.imdb.com/title/tt0816692/",
-    slika: "images/movie-p1.jpg",
+    slika: "images/uskoro-movie-p1.jpg",
     baner: "images/movie-b2.jpg",
     g_glumac1: "M. Mekonahi",
     g_glumac1_slika: "images/glumac-1.jpg",
@@ -28,9 +28,9 @@ const film = {
   },
 
   film2: {
-    naziv: "Joker",
+    naziv: "Borilački klub",
     kratak_opis:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque cum, incidunt pariatur repellendus eum velit magnam, maiores eos nam quod quaerat ducimus unde quia aut? Suscipit et aliquid ea ex!2",
+      "Pratite anonimnog naratora i njegovog tajanstvenog prijatelja Tajlera Durdena, dok zajedno formiraju podzemni klub gde se ljudi tuku do krvi. Ubrzo se klub širi, a situacija izmiče kontroli i stvari postaju sve opasnije. ",
     dug_opis:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo veniam distinctio voluptas harum, incidunt recusandae porro laboriosam veritatis odit culpa, amet perferendis aut quae. Quia unde excepturi quos non impedit nobis, consectetur at quo ea officiis inventore exercitationem similique aperiam a, error doloremque iure molestiae dolorem cupiditate cum illum dolor commodi. Veniam illum error accusantium veritatis hic, laboriosam ullam. Id minima delectus nulla voluptas harum non possimus quam, iure laudantium? Temporibus amet vel ea voluptates cupiditate a, aliquam eos molestiae?",
     zanr: "Drama",
@@ -43,9 +43,9 @@ const film = {
     vreme_2: "21:00h",
     cena: "350",
     sala: "SALA1",
-    ocena: "10",
+    ocena: "8.8",
     imdb: "https://www.imdb.com/title/tt0816692/",
-    slika: "images/movie-p1.jpg",
+    slika: "images/uskoro-movie-p2.jpg",
     baner: "images/movie-b2.jpg",
     g_glumac1: "M. Mekonahi",
     g_glumac1_slika: "images/glumac-1.jpg",
@@ -56,12 +56,12 @@ const film = {
   },
 
   film3: {
-    naziv: "Avatar",
+    naziv: "Pijanist",
     kratak_opis:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque cum, incidunt pariatur repellendus eum velit magnam, maiores eos nam quod quaerat ducimus unde quia aut? Suscipit et aliquid ea ex!3",
+      '"Pijanist" je istinita priča o Władysławu Szpilmanu, slavnom poljskom pijanisti koji je preživeo geto Varšavu i nacističku okupaciju tokom Drugog svetskog rata. Film, koji je režirao Roman Polanski, prati Szpilmanovu priču o preživljavanju, patnji i nadanju tokom jednog od najmračnijih perioda u istoriji čovečanstva. ',
     dug_opis:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo veniam distinctio voluptas harum, incidunt recusandae porro laboriosam veritatis odit culpa, amet perferendis aut quae. Quia unde excepturi quos non impedit nobis, consectetur at quo ea officiis inventore exercitationem similique aperiam a, error doloremque iure molestiae dolorem cupiditate cum illum dolor commodi. Veniam illum error accusantium veritatis hic, laboriosam ullam. Id minima delectus nulla voluptas harum non possimus quam, iure laudantium? Temporibus amet vel ea voluptates cupiditate a, aliquam eos molestiae?",
-    zanr: "Akcija, Avantura, Naučna fantastika, Voda",
+    zanr: "Bigrafija, Drama, Muzika",
     trajanje: "3h35m",
     rezija: "Cristofer Nolan",
     scenario: "Fran Walsh, Philippa Boyens",
@@ -71,9 +71,9 @@ const film = {
     vreme_2: "21:00h",
     cena: "350",
     sala: "SALA1",
-    ocena: "10",
+    ocena: "8.5",
     imdb: "tt0816692/",
-    slika: "images/movie-p1.jpg",
+    slika: "images/uskoro-movie-p3.jpg",
     baner: "images/movie-b2.jpg",
     g_glumac1: "M. Mekonahi",
     g_glumac1_slika: "images/glumac-1.jpg",
@@ -83,37 +83,6 @@ const film = {
     g_glumac3_slika: "images/glumac-3.jpg",
   },
 };
-
-// document.getElementById("u-zanr").innerHTML = film.film1.zanr;
-// document.getElementById("u-naziv").innerHTML = film.film1.naziv;
-// document.getElementById("u-ocena").innerHTML = film.film1.ocena;
-// document.getElementById("u-ocena").innerHTML = film.film1.ocena;
-// document.getElementById("u-dug_opis").innerHTML = film.film1.kratak_opis;
-// document.getElementById("u-trejler").src = film.film1.trejler;
-// if (filmovi_uskoro[0].classList.contains("aktivan")) {
-//   document.getElementById("u-zanr").innerHTML = film.film1.zanr;
-//   document.getElementById("u-naziv").innerHTML = film.film1.naziv;
-//   document.getElementById("u-ocena").innerHTML = film.film1.ocena;
-//   document.getElementById("u-ocena").innerHTML = film.film1.ocena;
-//   document.getElementById("u-dug_opis").innerHTML = film.film1.kratak_opis;
-//   document.getElementById("u-trejler").src = film.film1.trejler;
-// }
-// if (filmovi_uskoro[2].classList.contains("aktivan")) {
-//   document.getElementById("u-zanr").innerHTML = film.film3.zanr;
-//   document.getElementById("u-naziv").innerHTML = film.film3.naziv;
-//   document.getElementById("u-ocena").innerHTML = film.film3.ocena;
-//   document.getElementById("u-ocena").innerHTML = film.film3.ocena;
-//   document.getElementById("u-dug_opis").innerHTML = film.film3.kratak_opis;
-//   document.getElementById("u-trejler").src = film.film3.trejler;
-// }
-// if (filmovi_uskoro[1].classList.contains("aktivan")) {
-//   document.getElementById("u-zanr").innerHTML = film.film2.zanr;
-//   document.getElementById("u-naziv").innerHTML = film.film2.naziv;
-//   document.getElementById("u-ocena").innerHTML = film.film2.ocena;
-//   document.getElementById("u-ocena").innerHTML = film.film2.ocena;
-//   document.getElementById("u-dug_opis").innerHTML = film.film2.kratak_opis;
-//   document.getElementById("u-trejler").src = film.film2.trejler;
-// }
 
 const filmovi_uskoro = document.querySelectorAll(".film_uskoro");
 
@@ -129,7 +98,8 @@ filmovi_uskoro.forEach((film_uskoro) => {
         document.getElementById("u-ocena").innerHTML = film.film1.ocena;
         document.getElementById("u-dug_opis").innerHTML =
           film.film1.kratak_opis;
-        document.getElementById("u-trejler").src = "https://www.youtube.com/embed/zSWdZVtXT7E";
+        document.getElementById("u-trejler").src =
+          "https://www.youtube.com/embed/CHCUkXUPkFM";
         break;
       }
       case filmovi_uskoro[1].classList.contains("aktivan"): {
@@ -139,7 +109,8 @@ filmovi_uskoro.forEach((film_uskoro) => {
         document.getElementById("u-ocena").innerHTML = film.film2.ocena;
         document.getElementById("u-dug_opis").innerHTML =
           film.film2.kratak_opis;
-        document.getElementById("u-trejler").src = "https://www.youtube.com/embed/zAGVQLHvwOY";
+        document.getElementById("u-trejler").src =
+          "https://www.youtube.com/embed/6JnN1DmbqoU";
         break;
       }
       case filmovi_uskoro[2].classList.contains("aktivan"): {
@@ -149,7 +120,8 @@ filmovi_uskoro.forEach((film_uskoro) => {
         document.getElementById("u-ocena").innerHTML = film.film3.ocena;
         document.getElementById("u-dug_opis").innerHTML =
           film.film3.kratak_opis;
-        document.getElementById("u-trejler").src = "https://www.youtube.com/embed/d9MyW72ELq0";
+        document.getElementById("u-trejler").src =
+          "https://www.youtube.com/embed/BFwGqLa_oAo";
         break;
       }
       default: {
