@@ -240,7 +240,7 @@ footer p {
   display: flex;
   height: 100px;
   margin: auto;
-  border: 2px dashed #bbbbbb;
+  border: 1px solid #bbbbbb;
   align-items: center;
   justify-content: center;
 }
